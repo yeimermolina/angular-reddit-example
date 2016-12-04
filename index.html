@@ -4,7 +4,13 @@
     <title>Angular QuickStart</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Angular 2 - Simple Reddit</title>
+    <link rel="icon" type="image/png" href="resources/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="resources/images/favicon.ico" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="resources/vendor/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -20,6 +26,22 @@
   </head>
 
   <body>
-    <my-app>Loading AppComponent content here ...</my-app>
+    <div class="ui menu">
+      <div class="ui container">
+        <a href="#" class="header item">
+          <img class="logo" src="resources/images/ng-book-2-minibook.png">
+          ng-book 2
+        </a>
+        <div class="header item borderless">
+          <h1 class="ui header">
+            Angular 2 Yeimer Molina
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui main text container">
+      <reddit></reddit> <!-- <--- Our app loads here! -->
+    </div>
   </body>
 </html>
